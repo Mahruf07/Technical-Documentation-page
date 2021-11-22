@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <header>JS Documentation</header>
+
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Javascript" class="nav-link">JavaScript</a>
+        <a href="#Variable" class="nav-link">Variable</a>
+        <a href="#Scope" class="nav-link">Scope</a>
+        <a href="#Functions" class="nav-link">Functions</a>
+        
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+
+            <p>JavaScript is a lightweight, cross-platform, and interpreted scripting language. It is well-known for the development of web pages, many non-browser environments also use it. JavaScript can be used for Client-side developments as well as Server-side developments</p>
+
+            <code>document.getElementById("demo").innerHTML = "Hello JavaScript";</code>
+
+        </section>
+
+        <section class="main-section" id="Javascript">
+            <header>Javascript</header>
+
+            <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user</p>
+            
+            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects</p>
+
+            <code>
+                var x;
+                let y;
+                x = 5;
+                y = 6;
+                let z = x + y;
+            
+            </code>
+
+        </section>
+
+        <section class="main-section" id="Variable">
+            <header>Variable</header>
+
+            <p>The latest ECMAScript(ES6) standard defines seven data types: Out of which six data types are Primitive(predefined)
+                <ul>
+                    <li><b>Numbers</b></li>
+                    <li><b>String</b></li>
+                    <li><b>Boolean</b></li>
+                    <li><b>Null</b></li>
+                    <li><b>Undefined</b></li>
+                    <li><b>Object</b></li>
+                </ul>
+            </p>
+
+            <p><b>Variables in JavaScript:</b></p>
+
+            <p>Variables in JavaScript are containers that hold reusable data. It is the basic unit of storage in a program.</p>
+
+            <p><ul>
+                <li>The value stored in a variable can be changed during program execution.</li>
+                <li>A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.</li>
+                <li>In JavaScript, all the variables must be declared before they can be used.</li>
+                
+            </ul></p>
+            
+            <code>  
+                var price1 = 5;
+                var price2 = 6;
+                var total = price1 + price2;
+            </code>
+        </section>
+
+        <section class="main-section" id="Scope">
+            <header>Scope</header>
+
+            <p>JavaScript has 3 types of scope:</p>
+
+            <p><ul>
+                <li>Block scope</li>
+                <li>Function scope</li>
+                <li>Global scope</li>
+            </ul></p>
+
+            <code>
+                function myFunction() {
+                    var carName = "Volvo";   // Function Scope
+                  }   
+            </code>
+        </section>
+
+        <section class="main-section" id="Functions"> 
+            <header>Functions</header>
+
+            <p>Function parameters are listed inside the parentheses () in the function definition.
+
+                Function arguments are the values received by the function when it is invoked.
+                
+                Inside the function, the arguments (the parameters) behave as local variables.</p>
+
+            <code>
+                function myFunction(p1, p2) {
+                    return p1 * p2;   // The function returns the product of p1 and p2
+                  }
+            </code>
+
+        </section>
+
+    </main>
+</body>
+</html>
